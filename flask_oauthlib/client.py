@@ -300,11 +300,11 @@ class OAuthRemoteApp(object):
     def authorize_url(self):
         return self._get_property('authorize_url')
 
-    @cached_property
+    @property
     def consumer_key(self):
         return self._get_property('consumer_key')
 
-    @cached_property
+    @property
     def consumer_secret(self):
         return self._get_property('consumer_secret')
 
