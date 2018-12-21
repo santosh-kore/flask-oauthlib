@@ -75,7 +75,7 @@ class OAuth(object):
         Find more parameters from :class:`OAuthRemoteApp`.
         """
         log.debug('**{kwargs}')
-        log.debug(**{kwargs})
+        log.debug(kwargs)
         remote = OAuthRemoteApp(self, name, **kwargs)
         if register:
             assert name not in self.remote_apps
